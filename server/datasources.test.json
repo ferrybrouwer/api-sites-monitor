@@ -1,0 +1,24 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqlDs": {
+    "name": "mysqlDs",
+    "connector": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "database": "test_sitemonitor",
+    "username": "root",
+    "password": "root",
+    "debug": false,
+    "createDatabase": true
+  },
+  "mongoDs": {
+    "name": "mongoDs",
+    "connector": "mongodb",
+    "host": "localhost",
+    "database": "test-site-monitor-api",
+    "post": 27017
+  }
+}

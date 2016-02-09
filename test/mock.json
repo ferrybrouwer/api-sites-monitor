@@ -1,0 +1,75 @@
+{
+  "FormType": {
+    "casperjs": "/Users/ferrybrouwer/Documents/loopback/site-performance-api/casperjs/wpcf7.js",
+    "description": "Test Wordpress Contact Form 7 forms"
+  },
+  "Site": {
+    "name": "Happy Online",
+    "url": "http://www.happy-online.nl"
+  },
+  "SiteForm": {
+    "formPath": "#wpcf7-f528-p222-o1 > form",
+    "url": "/contact"
+  },
+  "SiteTestForm": {
+    "stdout": [
+      "Suite started",
+      "Suite ended"
+    ],
+    "isFailed": false
+  },
+  "SiteTestPsi": {
+    "data": {
+      "overview": {
+        "url": "happy-online.nl",
+        "strategy": "mobile",
+        "score": 56
+      },
+      "statistics": {
+        "css_response_bytes": "351 kB",
+        "html_response_bytes": "85.29 kB",
+        "image_response_bytes": "1.09 MB",
+        "javascript_response_bytes": "543.4 kB",
+        "number_css_resources": 1,
+        "number_hosts": 6,
+        "number_js_resources": 9,
+        "number_resources": 42,
+        "number_static_resources": 29,
+        "text_response_bytes": "429.72 kB",
+        "total_request_bytes": "4.19 kB"
+      },
+      "rule_results": {
+        "avoid_landing_page_redirects": 0,
+        "avoid_plugins": 0,
+        "configure_viewport": 0,
+        "enable_gzip_compression": 0,
+        "leverage_browser_caching": 2.24,
+        "main_resource_server_response_time": 8.09,
+        "minify_css": 0,
+        "minify_html": 0,
+        "minify_javascript": 0,
+        "minimize_render_blocking_resources": 24,
+        "optimize_images": 51.03,
+        "prioritize_visible_content": 0,
+        "size_content_to_viewport": 0,
+        "size_tap_targets_appropriately": 0.04,
+        "use_legible_fontsizes": 0
+      }
+    }
+  },
+  "SiteTestPing": {
+    "data": {
+      "https": 0,
+      "www": 0,
+      "message": "",
+      "success": 1,
+      "statusCode": 200,
+      "size": 1024,
+      "time_first": 40,
+      "time_total": 2000,
+      "ip": "0.0.0.0"
+    }
+  },
+  "SiteTest": {
+  }
+}

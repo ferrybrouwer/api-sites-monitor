@@ -1,0 +1,44 @@
+{
+  "name": "SiteTest",
+  "plural": "site-tests",
+  "base": "BaseModel",
+  "options": {
+    "strict": true,
+    "idInjection": true
+  },
+  "properties": {
+    "createdAt": {
+      "type": "date",
+      "required": true
+    },
+    "customData": {
+      "type": "object",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "forms": {
+      "type": "hasMany",
+      "model": "SiteTestForm",
+      "foreignKey": "siteTestId"
+    },
+    "ping": {
+      "type": "hasOne",
+      "model": "SiteTestPing",
+      "foreignKey": "siteTestId"
+    },
+    "psi": {
+      "type": "hasOne",
+      "model": "SiteTestPsi",
+      "foreignKey": "siteTestId"
+    },
+    "site": {
+      "type": "belongsTo",
+      "model": "Site",
+      "foreignKey": "siteId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

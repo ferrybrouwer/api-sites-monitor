@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "Site": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "FormType": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "SiteForm": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "SiteTestPsi": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "SiteTestForm": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "SiteTestPing": {
+    "dataSource": "mongoDs",
+    "public": false
+  },
+  "SiteTest": {
+    "dataSource": "mongoDs",
+    "public": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "SiteTestPing",
+  "plural": "site-test-pings",
+  "base": "BaseSiteTestModel",
+  "options": {
+    "strict": true,
+    "idInjection": true
+  },
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "siteTest": {
+      "type": "belongsTo",
+      "model": "SiteTest",
+      "foreignKey": "siteTestId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

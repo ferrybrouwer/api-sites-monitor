@@ -1,0 +1,41 @@
+{
+  "name": "SiteTestForm",
+  "plural": "site-test-forms",
+  "options": {
+    "strict": true,
+    "base": "BaseSiteTestModel",
+    "idInjection": true
+  },
+  "properties": {
+    "screenshots": {
+      "type": [
+        "string"
+      ]
+    },
+    "stdout": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "isFailed": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "siteForm": {
+      "type": "belongsTo",
+      "model": "SiteForm",
+      "foreignKey": "siteFormId"
+    },
+    "siteTest": {
+      "type": "belongsTo",
+      "model": "SiteTest",
+      "foreignKey": "siteTestId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

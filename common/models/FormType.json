@@ -1,0 +1,23 @@
+{
+  "name": "FormType",
+  "plural": "form-types",
+  "base": "BaseModel",
+  "options": {
+    "strict": true,
+    "idInjection": true
+  },
+  "properties": {
+    "casperjs": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
